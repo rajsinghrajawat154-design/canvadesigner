@@ -60,7 +60,103 @@ a{color:inherit;text-decoration:none}.container{width:min(1180px,92vw);margin:au
 <section id="services" class="container fade"><div class="section-head"><div><div class="eyebrow">SERVICES</div><h2>Let’s Create Something Great.</h2></div></div><div class="grid3 services"><div class="glass"><h3>Social Media Design</h3><p class="muted">Posts • Stories • Carousels</p></div><div class="glass"><h3>Banner Design</h3><p class="muted">Digital • Social Media • Promotional</p></div><div class="glass"><h3>Video Design</h3><p class="muted">Reels • Motion graphics • Covers</p></div><div class="glass"><h3>Thumbnail Design</h3><p class="muted">YouTube • Video content</p></div><div class="glass"><h3>Posters & Flyers</h3><p class="muted">Events • Promotions • Marketing</p></div><div class="glass"><h3>Branding</h3><p class="muted">Logo • Brand visuals • Business materials</p></div></div></section>
 <section id="process" class="container fade"><div class="section-head"><div><div class="eyebrow">PROCESS</div><h2>How I Turn Ideas Into Designs</h2></div></div><div class="timeline"><div class="glass"><div class="num">01</div><h3>Discover</h3><p class="muted">Understand your idea, audience and goals.</p></div><div class="glass"><div class="num">02</div><h3>Plan</h3><p class="muted">Develop the concept and visual direction.</p></div><div class="glass"><div class="num">03</div><h3>Design</h3><p class="muted">Turn the concept into a polished visual.</p></div><div class="glass"><div class="num">04</div><h3>Refine</h3><p class="muted">Improve the design based on feedback.</p></div><div class="glass"><div class="num">05</div><h3>Deliver</h3><p class="muted">Final files ready to publish.</p></div></div></section>
 <section class="container fade"><div class="section-head"><div><div class="eyebrow">DESIGN + TECHNOLOGY</div><h2>Where Design Meets Technology.</h2></div><p>Alongside design, I’m exploring Computer Science, Artificial Intelligence and Machine Learning — combining creativity with technology to explore new ways of creating.</p></div><div class="grid3"><div class="glass"><h3>DESIGN</h3><p class="muted">Canva • Graphic Design • Visual Storytelling</p></div><div class="glass"><h3>CREATIVE</h3><p class="muted">Video • Branding • Content Creation</p></div><div class="glass"><h3>TECH</h3><p class="muted">Computer Science • AI • Machine Learning</p></div></div></section>
-<section id="contact" class="container fade"><div class="contact"><div><div class="eyebrow">CONTACT</div><h2 style="font-size:clamp(42px,6vw,78px);line-height:1;margin:0 0 20px">Have an Idea?<br><span class="grad">Let’s Design It.</span></h2><p class="muted">Whether you need a social post, banner, carousel, video, poster, thumbnail or complete campaign — I’d love to work with you.</p><p><strong>Instagram:</strong> @canvadesigner<br><strong>Name:</strong> Raj Singh<br><strong>Email:</strong> rajsinghrajawat154@gmsil.com<br><strong>LinkedIn:</strong> https://www.linkedin.com/in/raj-singh-685274257/</p></div><form class="glass form" onsubmit="event.preventDefault();document.getElementById('success').textContent='Thanks! Your inquiry is ready to send once you connect this form to your email service.';"><input required placeholder="Name"><input required type="email" placeholder="Email"><input placeholder="Company / Brand"><select><option>Service Required</option><option>Social Media Design</option><option>Banner</option><option>Carousel</option><option>Video</option><option>Thumbnail</option><option>Poster / Flyer</option><option>Branding</option></select><input class="full" placeholder="Budget"><textarea placeholder="Project Details"></textarea><button class="btn full" type="submit">Send Project Inquiry →</button><div id="success" class="muted full" aria-live="polite"></div></form></div></section>
+<section id="contact" class="container fade">
+  <div class="contact">
+    
+    <div>
+      <div class="eyebrow">CONTACT</div>
+      <h2 style="font-size:clamp(42px,6vw,78px);line-height:1.05;">
+        Have an<br>
+        Idea?<br>
+        <span class="grad">Let's Design<br>It.</span>
+      </h2>
+
+      <p>
+        Whether you need a social post, banner, carousel, video,
+        poster, thumbnail or complete campaign — I'd love to work with you.
+      </p>
+
+      <p>
+        <strong>Instagram:</strong> @canvadesigner<br>
+        <strong>Name:</strong> Raj Singh<br>
+        <strong>Email:</strong> rajsinghrajawat154@gmail.com<br>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/raj-singh-685274257/" target="_blank">
+          LinkedIn Profile
+        </a>
+      </p>
+    </div>
+
+    <form
+      class="glass form"
+      action="https://formspree.io/f/https://formspree.io/f/xzezpnal"
+      method="POST"
+      onsubmit="document.getElementById('success').textContent='Sending your inquiry...';"
+    >
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      >
+
+      <input
+        type="text"
+        name="company"
+        placeholder="Company / Brand"
+      >
+
+      <select name="service" required>
+        <option value="" disabled selected>Service Required</option>
+        <option value="Social Media Design">Social Media Design</option>
+        <option value="Banner">Banner</option>
+        <option value="Carousel">Carousel</option>
+        <option value="Video">Video</option>
+        <option value="Poster">Poster</option>
+        <option value="Thumbnail">Thumbnail</option>
+        <option value="Complete Campaign">Complete Campaign</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <input
+        type="text"
+        name="budget"
+        placeholder="Budget"
+      >
+
+      <textarea
+        name="message"
+        placeholder="Project Details"
+        required
+      ></textarea>
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Project Inquiry — Canvadesigner"
+      >
+
+      <button type="submit">
+        Send Project Inquiry →
+      </button>
+
+      <p
+        id="success"
+        style="margin-top:12px;font-size:14px;"
+      ></p>
+
+    </form>
+
+  </div>
+</section>
 <footer class="footer"><div class="container"><strong>CANVADESIGNER</strong><p>Designed by Raj Singh • Turning ideas into visuals that get noticed.</p><p>© 2026 Canvadesigner. All rights reserved.</p></div></footer>
 <script>
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
