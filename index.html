@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Canvadesigner | Raj Singh</title>
 
 <meta name="description"
-content="Raj Singh is a Canva designer creating banners, frames, videos, carousels, posters, thumbnails and engaging visual content for brands, businesses and creators." />
+content="Raj Singh is a Canva designer creating banners, frames, videos, carousels, posters, thumbnails and engaging visual content for brands, businesses and creators.">
 
-<meta property="og:title" content="Raj Singh | Canva Designer — Canvadesigner" />
-<meta property="og:description" content="Turning ideas into visuals that get noticed." />
-<meta property="og:type" content="website" />
+<meta property="og:title" content="Raj Singh | Canva Designer — Canvadesigner">
+<meta property="og:description" content="Turning ideas into visuals that get noticed.">
+<meta property="og:type" content="website">
 
 <link rel="icon"
 href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🎨</text></svg>">
@@ -46,9 +46,9 @@ body {
   font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 
   background:
-  radial-gradient(900px 600px at 15% -10%,rgba(139,92,246,.18),transparent 60%),
-  radial-gradient(800px 500px at 85% 15%,rgba(236,72,153,.14),transparent 60%),
-  var(--bg);
+    radial-gradient(900px 600px at 15% -10%,rgba(139,92,246,.18),transparent 60%),
+    radial-gradient(800px 500px at 85% 15%,rgba(236,72,153,.14),transparent 60%),
+    var(--bg);
 
   color:var(--text);
   overflow-x:hidden;
@@ -57,6 +57,13 @@ body {
 a {
   color:inherit;
   text-decoration:none;
+}
+
+button,
+input,
+select,
+textarea {
+  font:inherit;
 }
 
 .container {
@@ -78,7 +85,6 @@ a {
   z-index:50;
 
   background:rgba(16,17,25,.55);
-
   backdrop-filter:blur(18px);
 
   border:1px solid var(--line);
@@ -108,11 +114,17 @@ a {
 .navlinks a {
   color:#d7d9e3;
   font-size:14px;
+  transition:.2s;
+}
+
+.navlinks a:hover {
+  color:white;
 }
 
 .btn {
   display:inline-flex;
   align-items:center;
+  justify-content:center;
   gap:8px;
 
   padding:12px 18px;
@@ -121,21 +133,29 @@ a {
   border:1px solid var(--line);
 
   background:
-  linear-gradient(
-  135deg,
-  rgba(139,92,246,.22),
-  rgba(236,72,153,.14)
-  );
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.22),
+      rgba(236,72,153,.14)
+    );
 
   color:white;
 
   font-weight:700;
 
-  transition:.25s transform,.25s box-shadow;
+  cursor:pointer;
+
+  transition:
+    .25s transform,
+    .25s box-shadow,
+    .25s border-color;
 }
 
 .btn:hover {
   transform:translateY(-2px);
+
+  border-color:rgba(139,92,246,.45);
+
   box-shadow:0 12px 30px rgba(139,92,246,.18);
 }
 
@@ -161,14 +181,17 @@ a {
 
 .hero-grid {
   display:grid;
+
   grid-template-columns:1.15fr .85fr;
 
   gap:60px;
+
   align-items:center;
 }
 
 .eyebrow {
   font-size:13px;
+
   letter-spacing:.22em;
 
   color:#c5b7ff;
@@ -190,12 +213,12 @@ a {
 
 .grad {
   background:
-  linear-gradient(
-  90deg,
-  var(--p1),
-  var(--p2),
-  var(--p3)
-  );
+    linear-gradient(
+      90deg,
+      var(--p1),
+      var(--p2),
+      var(--p3)
+    );
 
   -webkit-background-clip:text;
   background-clip:text;
@@ -238,7 +261,9 @@ a {
 
 .actions {
   display:flex;
+
   gap:12px;
+
   flex-wrap:wrap;
 }
 
@@ -269,14 +294,14 @@ a {
   top:70px;
 
   background:
-  radial-gradient(
-  circle at 35% 30%,
-  #fff 0 3%,
-  #aa85ff 4% 15%,
-  #7c3aed 45%,
-  #21153f 74%,
-  #0d0d14 100%
-  );
+    radial-gradient(
+      circle at 35% 30%,
+      #fff 0 3%,
+      #aa85ff 4% 15%,
+      #7c3aed 45%,
+      #21153f 74%,
+      #0d0d14 100%
+    );
 
   animation:float 5s ease-in-out infinite;
 }
@@ -292,11 +317,11 @@ a {
   border:1px solid rgba(255,255,255,.1);
 
   background:
-  linear-gradient(
-  145deg,
-  rgba(255,255,255,.09),
-  rgba(255,255,255,.025)
-  );
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.09),
+      rgba(255,255,255,.025)
+    );
 
   backdrop-filter:blur(18px);
 
@@ -312,8 +337,8 @@ a {
   top:75px;
 
   transform:
-  rotateY(18deg)
-  rotateX(6deg);
+    rotateY(18deg)
+    rotateX(6deg);
 
   animation:float2 6s ease-in-out infinite;
 }
@@ -323,8 +348,8 @@ a {
   bottom:55px;
 
   transform:
-  rotateY(-20deg)
-  rotateX(-4deg);
+    rotateY(-20deg)
+    rotateX(-4deg);
 
   animation:float 7s ease-in-out infinite;
 }
@@ -337,6 +362,7 @@ a {
 .big {
   font-size:44px;
   font-weight:900;
+
   margin-top:34px;
 }
 
@@ -370,15 +396,19 @@ a {
 }
 
 @keyframes float {
+
   50% {
     transform:translateY(-14px) rotate(2deg);
   }
+
 }
 
 @keyframes float2 {
+
   50% {
     transform:translateY(12px) rotate(-2deg);
   }
+
 }
 
 
@@ -409,14 +439,14 @@ section {
 
 .section-head p {
   color:var(--muted);
+
   max-width:580px;
 }
 
 .grid3 {
   display:grid;
 
-  grid-template-columns:
-  repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
 
   gap:18px;
 }
@@ -424,19 +454,18 @@ section {
 .grid4 {
   display:grid;
 
-  grid-template-columns:
-  repeat(4,1fr);
+  grid-template-columns:repeat(4,1fr);
 
   gap:18px;
 }
 
 .glass {
   background:
-  linear-gradient(
-  180deg,
-  rgba(255,255,255,.06),
-  rgba(255,255,255,.02)
-  );
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.06),
+      rgba(255,255,255,.02)
+    );
 
   border:1px solid var(--line);
 
@@ -445,7 +474,7 @@ section {
   padding:26px;
 
   box-shadow:
-  inset 0 1px 0 rgba(255,255,255,.05);
+    inset 0 1px 0 rgba(255,255,255,.05);
 }
 
 .glass h3 {
@@ -464,6 +493,7 @@ section {
 
 .muted {
   color:var(--muted);
+
   line-height:1.6;
 }
 
@@ -480,19 +510,22 @@ section {
   position:relative;
 
   transition:
-  transform .3s ease,
-  border-color .3s ease,
-  box-shadow .3s ease;
+    transform .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
 }
 
 .service-card:hover {
   transform:translateY(-7px);
 
-  border-color:
-  rgba(139,92,246,.6);
+  border-color:rgba(139,92,246,.6);
 
-  box-shadow:
-  0 20px 50px rgba(0,0,0,.25);
+  box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.service-card:focus {
+  outline:2px solid var(--p1);
+  outline-offset:4px;
 }
 
 .view-work {
@@ -508,7 +541,7 @@ section {
 }
 
 
-/* ================= WORK ================= */
+/* ================= FEATURED WORK ================= */
 
 .work-tabs {
   display:flex;
@@ -536,11 +569,11 @@ section {
 
 .tab.active {
   background:
-  linear-gradient(
-  90deg,
-  var(--p1),
-  var(--p2)
-  );
+    linear-gradient(
+      90deg,
+      var(--p1),
+      var(--p2)
+    );
 
   color:white;
 }
@@ -548,8 +581,7 @@ section {
 .projects {
   display:grid;
 
-  grid-template-columns:
-  repeat(2,1fr);
+  grid-template-columns:repeat(2,1fr);
 
   gap:22px;
 }
@@ -566,26 +598,51 @@ section {
   border:1px solid var(--line);
 
   background:
-  radial-gradient(
-  500px 260px at 20% 10%,
-  rgba(139,92,246,.2),
-  transparent 60%
-  ),
-  #11131a;
+    radial-gradient(
+      500px 260px at 20% 10%,
+      rgba(139,92,246,.2),
+      transparent 60%
+    ),
+    #11131a;
 
   transition:
-  .35s transform,
-  .35s box-shadow;
+    .35s transform,
+    .35s box-shadow,
+    .35s border-color;
 }
 
 .project:hover {
   transform:
-  translateY(-6px)
-  rotateX(1deg)
-  rotateY(-1deg);
+    translateY(-6px)
+    rotateX(1deg)
+    rotateY(-1deg);
 
-  box-shadow:
-  0 30px 70px rgba(0,0,0,.3);
+  border-color:rgba(139,92,246,.45);
+
+  box-shadow:0 30px 70px rgba(0,0,0,.3);
+}
+
+.project-clickable {
+  cursor:pointer;
+}
+
+.project-clickable:focus {
+  outline:2px solid var(--p1);
+  outline-offset:4px;
+}
+
+.project-clickable .project-inner::after {
+  content:"View project →";
+
+  display:inline-block;
+
+  margin-top:14px;
+
+  color:#c5b7ff;
+
+  font-size:13px;
+
+  font-weight:800;
 }
 
 .project-inner {
@@ -600,14 +657,15 @@ section {
   margin-bottom:24px;
 
   background:
-  linear-gradient(
-  135deg,
-  #2a2135,
-  #4b2c2c 45%,
-  #1a1717
-  );
+    linear-gradient(
+      135deg,
+      #2a2135,
+      #4b2c2c 45%,
+      #1a1717
+    );
 
   display:grid;
+
   place-items:center;
 
   font-size:56px;
@@ -615,32 +673,32 @@ section {
 
 .project[data-cat="cafe"] .mock {
   background:
-  linear-gradient(
-  135deg,
-  #3b2b20,
-  #6c4b2f,
-  #17120f
-  );
+    linear-gradient(
+      135deg,
+      #3b2b20,
+      #6c4b2f,
+      #17120f
+    );
 }
 
 .project[data-cat="fitness"] .mock {
   background:
-  linear-gradient(
-  135deg,
-  #101418,
-  #2d3339,
-  #191b1e
-  );
+    linear-gradient(
+      135deg,
+      #101418,
+      #2d3339,
+      #191b1e
+    );
 }
 
 .project[data-cat="branding"] .mock {
   background:
-  linear-gradient(
-  135deg,
-  #201947,
-  #4b1d4d,
-  #4f2414
-  );
+    linear-gradient(
+      135deg,
+      #201947,
+      #4b1d4d,
+      #4f2414
+    );
 }
 
 .project h3 {
@@ -655,10 +713,39 @@ section {
 .case {
   display:grid;
 
-  grid-template-columns:
-  1fr 1fr;
+  grid-template-columns:1fr 1fr;
 
   gap:20px;
+}
+
+.case-gallery {
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:18px;
+
+  margin-top:18px;
+}
+
+.case-gallery img {
+  width:100%;
+
+  border-radius:20px;
+
+  display:block;
+
+  object-fit:cover;
+}
+
+.case-main-image {
+  width:100%;
+
+  border-radius:24px;
+
+  display:block;
+
+  object-fit:cover;
 }
 
 .palette {
@@ -675,8 +762,7 @@ section {
 
   border-radius:16px;
 
-  border:
-  1px solid rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.12);
 }
 
 
@@ -685,8 +771,7 @@ section {
 .timeline {
   display:grid;
 
-  grid-template-columns:
-  repeat(5,1fr);
+  grid-template-columns:repeat(5,1fr);
 
   gap:14px;
 }
@@ -695,7 +780,7 @@ section {
   position:relative;
 }
 
-.timeline .glass:after {
+.timeline .glass::after {
   content:"";
 
   position:absolute;
@@ -709,8 +794,49 @@ section {
   background:var(--line);
 }
 
-.timeline .glass:last-child:after {
+.timeline .glass:last-child::after {
   display:none;
+}
+
+
+/* ================= SERVICES -> CONTACT ================= */
+
+.contact-service {
+  cursor:pointer;
+
+  position:relative;
+
+  transition:
+    transform .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
+}
+
+.contact-service:hover {
+  transform:translateY(-6px);
+
+  border-color:rgba(139,92,246,.55);
+
+  box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.contact-service:focus {
+  outline:2px solid var(--p1);
+  outline-offset:4px;
+}
+
+.contact-service::after {
+  content:"Start a project →";
+
+  display:inline-block;
+
+  margin-top:14px;
+
+  color:#c5b7ff;
+
+  font-size:13px;
+
+  font-weight:800;
 }
 
 
@@ -719,8 +845,7 @@ section {
 .contact {
   display:grid;
 
-  grid-template-columns:
-  .8fr 1.2fr;
+  grid-template-columns:.8fr 1.2fr;
 
   gap:30px;
 }
@@ -728,8 +853,7 @@ section {
 .form {
   display:grid;
 
-  grid-template-columns:
-  1fr 1fr;
+  grid-template-columns:1fr 1fr;
 
   gap:14px;
 }
@@ -750,12 +874,26 @@ section {
   padding:14px 15px;
 
   outline:none;
+
+  transition:
+    border-color .2s,
+    box-shadow .2s;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color:rgba(139,92,246,.8);
+
+  box-shadow:0 0 0 3px rgba(139,92,246,.1);
 }
 
 .form textarea {
   min-height:150px;
 
   grid-column:1/-1;
+
+  resize:vertical;
 }
 
 .form .full {
@@ -770,17 +908,47 @@ section {
   border-radius:14px;
 
   background:
-  linear-gradient(
-  90deg,
-  var(--p1),
-  var(--p2)
-  );
+    linear-gradient(
+      90deg,
+      var(--p1),
+      var(--p2)
+    );
 
   color:white;
 
   font-weight:800;
 
   cursor:pointer;
+
+  transition:
+    transform .2s,
+    box-shadow .2s;
+}
+
+.form button:hover {
+  transform:translateY(-2px);
+
+  box-shadow:0 12px 30px rgba(139,92,246,.18);
+}
+
+.form-highlight {
+  animation:formGlow 1.2s ease;
+}
+
+@keyframes formGlow {
+
+  0% {
+    box-shadow:0 0 0 0 rgba(139,92,246,0);
+  }
+
+  40% {
+    box-shadow:0 0 0 5px rgba(139,92,246,.18);
+  }
+
+  100% {
+    box-shadow:0 0 0 0 rgba(139,92,246,0);
+  }
+
 }
 
 
@@ -793,8 +961,7 @@ section {
 
   inset:0;
 
-  background:
-  rgba(4,4,8,.88);
+  background:rgba(4,4,8,.88);
 
   backdrop-filter:blur(15px);
 
@@ -816,8 +983,7 @@ section {
 
   background:#11121a;
 
-  border:
-  1px solid rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.1);
 
   border-radius:28px;
 
@@ -827,8 +993,7 @@ section {
 }
 
 .portfolio-box h2 {
-  font-size:
-  clamp(38px,5vw,65px);
+  font-size:clamp(38px,5vw,65px);
 
   margin:5px 0 10px;
 }
@@ -842,8 +1007,7 @@ section {
   width:45px;
   height:45px;
 
-  border:
-  1px solid rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.1);
 
   background:#191a24;
 
@@ -868,8 +1032,7 @@ section {
 .portfolio-grid {
   display:grid;
 
-  grid-template-columns:
-  repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
 
   gap:18px;
 
@@ -885,8 +1048,7 @@ section {
 
   border-radius:18px;
 
-  border:
-  1px solid rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.08);
 
   transition:transform .3s ease;
 }
@@ -896,10 +1058,9 @@ section {
 }
 
 .project-placeholder {
-  height:280px;
+  min-height:280px;
 
-  border:
-  1px dashed rgba(255,255,255,.15);
+  border:1px dashed rgba(255,255,255,.15);
 
   border-radius:18px;
 
@@ -914,8 +1075,7 @@ section {
 
   color:#777b8d;
 
-  background:
-  rgba(255,255,255,.02);
+  background:rgba(255,255,255,.02);
 }
 
 
@@ -924,8 +1084,7 @@ section {
 .footer {
   padding:40px 0 70px;
 
-  border-top:
-  1px solid var(--line);
+  border-top:1px solid var(--line);
 
   color:#b9bcc8;
 }
@@ -936,8 +1095,7 @@ section {
 .fade {
   opacity:0;
 
-  transform:
-  translateY(20px);
+  transform:translateY(20px);
 
   transition:.7s ease;
 }
@@ -972,8 +1130,7 @@ section {
   }
 
   .grid4 {
-    grid-template-columns:
-    1fr 1fr;
+    grid-template-columns:1fr 1fr;
   }
 
   .grid3 {
@@ -988,7 +1145,7 @@ section {
     grid-template-columns:1fr;
   }
 
-  .timeline .glass:after {
+  .timeline .glass::after {
     display:none;
   }
 
@@ -998,15 +1155,17 @@ section {
 
   .section-head {
     align-items:start;
+
     flex-direction:column;
   }
 
-  .portfolio-grid {
-    grid-template-columns:
-    1fr 1fr;
+  .portfolio-grid,
+  .case-gallery {
+    grid-template-columns:1fr 1fr;
   }
 
 }
+
 
 @media(max-width:600px) {
 
@@ -1047,7 +1206,8 @@ section {
     font-size:54px;
   }
 
-  .portfolio-grid {
+  .portfolio-grid,
+  .case-gallery {
     grid-template-columns:1fr;
   }
 
@@ -1057,11 +1217,14 @@ section {
 
 }
 
+
 @media(prefers-reduced-motion:reduce) {
 
   * {
     scroll-behavior:auto !important;
+
     animation:none !important;
+
     transition:none !important;
   }
 
@@ -1084,623 +1247,720 @@ section {
 
   <div class="navlinks">
 
-    <a href="#about">About</a>
+    <a href="#about">
+      About
+    </a>
 
-    <a href="#work">Work</a>
+    <a href="#work">
+      Work
+    </a>
 
-    <a href="#services">Services</a>
+    <a href="#services">
+      Services
+    </a>
 
-    <a href="#process">Process</a>
+    <a href="#process">
+      Process
+    </a>
 
-    <a href="#contact">Contact</a>
+    <a href="#contact">
+      Contact
+    </a>
 
   </div>
 
-  <a class="btn" href="#contact">
+  <a
+    class="btn"
+    href="#contact"
+  >
     Start a Project →
   </a>
 
   <button
-  class="menu btn alt"
-  aria-label="menu">
-
+    class="menu btn alt"
+    aria-label="Menu"
+  >
     ☰
-
   </button>
 
 </nav>
-
 
 
 <!-- ================= HERO ================= -->
 
 <header class="hero container">
 
-<div class="hero-grid">
+  <div class="hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        RAJ SINGH • CANVA DESIGNER
+      </div>
+
+      <h1>
+
+        Turning Ideas Into
+
+        <span class="grad">
+          Visuals That Get Noticed.
+        </span>
+
+      </h1>
+
+      <p>
+
+        I’m Raj Singh, a Canva designer creating banners,
+        frames, videos, carousels, social media content
+        and visual experiences that help brands stand out.
+
+      </p>
+
+      <div class="chips">
+
+        <span class="chip">
+          Banners
+        </span>
+
+        <span class="chip">
+          Frames
+        </span>
+
+        <span class="chip">
+          Videos
+        </span>
+
+        <span class="chip">
+          Carousels
+        </span>
+
+        <span class="chip">
+          Posters
+        </span>
+
+        <span class="chip">
+          Thumbnails
+        </span>
+
+      </div>
+
+      <div class="actions">
+
+        <a
+          class="btn"
+          href="#work"
+        >
+          View My Work →
+        </a>
+
+        <a
+          class="btn alt"
+          href="#contact"
+        >
+          Let’s Work Together
+        </a>
+
+      </div>
+
+    </div>
 
 
-<div>
+    <div
+      class="stage"
+      aria-hidden="true"
+    >
 
-<div class="eyebrow">
-RAJ SINGH • CANVA DESIGNER
-</div>
+      <div class="orb one"></div>
 
-<h1>
+      <div class="card3d a">
 
-Turning Ideas Into
+        <div class="mini">
+          SOCIAL MEDIA DESIGN
+        </div>
 
-<span class="grad">
-Visuals That Get Noticed.
-</span>
+        <div class="big">
+          CAROUSEL
+        </div>
 
-</h1>
+      </div>
 
-<p>
+      <div class="card3d b">
 
-I’m Raj Singh, a Canva designer creating banners,
-frames, videos, carousels, social media content
-and visual experiences that help brands stand out.
+        <div class="mini">
+          CANVADESIGNER
+        </div>
 
-</p>
+        <div class="big">
+          VISUALS ✦
+        </div>
 
+      </div>
 
-<div class="chips">
+      <div class="spark s1"></div>
 
-<span class="chip">Banners</span>
+      <div class="spark s2"></div>
 
-<span class="chip">Frames</span>
+    </div>
 
-<span class="chip">Videos</span>
-
-<span class="chip">Carousels</span>
-
-<span class="chip">Posters</span>
-
-<span class="chip">Thumbnails</span>
-
-</div>
-
-
-<div class="actions">
-
-<a class="btn" href="#work">
-View My Work →
-</a>
-
-<a class="btn alt" href="#contact">
-Let’s Work Together
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="stage" aria-hidden="true">
-
-<div class="orb one"></div>
-
-
-<div class="card3d a">
-
-<div class="mini">
-SOCIAL MEDIA DESIGN
-</div>
-
-<div class="big">
-CAROUSEL
-</div>
-
-</div>
-
-
-<div class="card3d b">
-
-<div class="mini">
-CANVADESIGNER
-</div>
-
-<div class="big">
-VISUALS ✦
-</div>
-
-</div>
-
-
-<div class="spark s1"></div>
-
-<div class="spark s2"></div>
-
-</div>
-
-
-</div>
+  </div>
 
 </header>
-
 
 
 <!-- ================= ABOUT ================= -->
 
 <section
-id="about"
-class="container fade">
+  id="about"
+  class="container fade"
+>
+
+  <div class="section-head">
+
+    <div>
+
+      <div class="eyebrow">
+        ABOUT
+      </div>
+
+      <h2>
+        Meet Raj Singh. 👋
+      </h2>
+
+    </div>
+
+    <p>
+
+      Designer. Creator. Visual storyteller.
+      I create clean, engaging and memorable
+      visuals for brands, creators and businesses.
+
+    </p>
+
+  </div>
 
 
-<div class="section-head">
+  <div class="grid3">
 
-<div>
+    <div class="glass">
 
-<div class="eyebrow">
-ABOUT
-</div>
+      <div class="num">
+        01
+      </div>
 
-<h2>
-Meet Raj Singh. 👋
-</h2>
+      <h3>
+        Creative Design
+      </h3>
 
-</div>
+      <p class="muted">
+        Turning ideas into attractive visual concepts.
+      </p>
 
-
-<p>
-
-Designer. Creator. Visual storyteller.
-I create clean, engaging and memorable
-visuals for brands, creators and businesses.
-
-</p>
-
-</div>
+    </div>
 
 
+    <div class="glass">
 
-<div class="grid3">
+      <div class="num">
+        02
+      </div>
 
+      <h3>
+        Content Creation
+      </h3>
 
-<div class="glass">
+      <p class="muted">
 
-<div class="num">
-01
-</div>
+        Creating engaging content for social media
+        and digital platforms.
 
-<h3>
-Creative Design
-</h3>
+      </p>
 
-<p class="muted">
-Turning ideas into attractive visual concepts.
-</p>
-
-</div>
-
+    </div>
 
 
-<div class="glass">
+    <div class="glass">
 
-<div class="num">
-02
-</div>
+      <div class="num">
+        03
+      </div>
 
-<h3>
-Content Creation
-</h3>
+      <h3>
+        Visual Storytelling
+      </h3>
 
-<p class="muted">
-Creating engaging content for social media
-and digital platforms.
-</p>
+      <p class="muted">
 
-</div>
+        Using design to communicate ideas
+        clearly and creatively.
 
+      </p>
 
+    </div>
 
-<div class="glass">
-
-<div class="num">
-03
-</div>
-
-<h3>
-Visual Storytelling
-</h3>
-
-<p class="muted">
-Using design to communicate ideas
-clearly and creatively.
-</p>
-
-</div>
-
-
-</div>
+  </div>
 
 </section>
-
 
 
 <!-- ================= WHAT I CREATE ================= -->
 
 <section class="container fade">
 
+  <div class="section-head">
 
-<div class="section-head">
+    <div>
 
-<div>
+      <div class="eyebrow">
+        WHAT I CREATE
+      </div>
 
-<div class="eyebrow">
-WHAT I CREATE
-</div>
+      <h2>
+        Designs built to attract attention.
+      </h2>
 
-<h2>
-Designs built to attract attention.
-</h2>
+    </div>
 
-</div>
+  </div>
 
-</div>
 
+  <div class="grid4 services">
 
 
-<div class="grid4 services">
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('social')"
+      onkeydown="handleGalleryKey(event,'social')"
+    >
 
+      <h3>
+        🎨 Social Media Posts
+      </h3>
 
-<div
-class="glass service-card"
-onclick="openGallery('social')">
+      <p class="muted">
 
-<h3>
-🎨 Social Media Posts
-</h3>
+        Engaging posts designed for Instagram
+        and other platforms.
 
-<p class="muted">
-Engaging posts designed for Instagram
-and other platforms.
-</p>
+      </p>
 
-<span class="view-work">
-View work →
-</span>
+      <span class="view-work">
+        View work →
+      </span>
 
-</div>
+    </div>
 
 
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('banners')"
+      onkeydown="handleGalleryKey(event,'banners')"
+    >
 
-<div
-class="glass service-card"
-onclick="openGallery('banners')">
+      <h3>
+        🖼️ Banners
+      </h3>
 
-<h3>
-🖼️ Banners
-</h3>
+      <p class="muted">
 
-<p class="muted">
-Professional banners for brands,
-businesses and creators.
-</p>
+        Professional banners for brands,
+        businesses and creators.
 
-<span class="view-work">
-View work →
-</span>
+      </p>
 
-</div>
+      <span class="view-work">
+        View work →
+      </span>
 
+    </div>
 
 
-<div
-class="glass service-card"
-onclick="openGallery('frames')">
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('frames')"
+      onkeydown="handleGalleryKey(event,'frames')"
+    >
 
-<h3>
-▣ Frames
-</h3>
+      <h3>
+        ▣ Frames
+      </h3>
 
-<p class="muted">
-Creative frames and visual layouts
-for digital content.
-</p>
+      <p class="muted">
 
-<span class="view-work">
-View work →
-</span>
+        Creative frames and visual layouts
+        for digital content.
 
-</div>
+      </p>
 
+      <span class="view-work">
+        View work →
+      </span>
 
+    </div>
 
-<div
-class="glass service-card"
-onclick="openGallery('carousels')">
 
-<h3>
-📱 Carousels
-</h3>
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('carousels')"
+      onkeydown="handleGalleryKey(event,'carousels')"
+    >
 
-<p class="muted">
-Informative multi-slide stories
-people want to swipe through.
-</p>
+      <h3>
+        📱 Carousels
+      </h3>
 
-<span class="view-work">
-View work →
-</span>
+      <p class="muted">
 
-</div>
+        Informative multi-slide stories
+        people want to swipe through.
 
+      </p>
 
+      <span class="view-work">
+        View work →
+      </span>
 
-<div
-class="glass service-card"
-onclick="openGallery('videos')">
+    </div>
 
-<h3>
-🎬 Videos
-</h3>
 
-<p class="muted">
-Creative video graphics,
-reels and visual content.
-</p>
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('videos')"
+      onkeydown="handleGalleryKey(event,'videos')"
+    >
 
-<span class="view-work">
-View work →
-</span>
+      <h3>
+        🎬 Videos
+      </h3>
 
-</div>
+      <p class="muted">
 
+        Creative video graphics,
+        reels and visual content.
 
+      </p>
 
-<div
-class="glass service-card"
-onclick="openGallery('thumbnails')">
+      <span class="view-work">
+        View work →
+      </span>
 
-<h3>
-📺 Thumbnails
-</h3>
+    </div>
 
-<p class="muted">
-Attention-grabbing YouTube
-and video thumbnails.
-</p>
 
-<span class="view-work">
-View work →
-</span>
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('thumbnails')"
+      onkeydown="handleGalleryKey(event,'thumbnails')"
+    >
 
-</div>
+      <h3>
+        📺 Thumbnails
+      </h3>
 
+      <p class="muted">
 
+        Attention-grabbing YouTube
+        and video thumbnails.
 
-<div
-class="glass service-card"
-onclick="openGallery('posters')">
+      </p>
 
-<h3>
-📢 Posters & Flyers
-</h3>
+      <span class="view-work">
+        View work →
+      </span>
 
-<p class="muted">
-Promotional graphics for businesses,
-events and campaigns.
-</p>
+    </div>
 
-<span class="view-work">
-View work →
-</span>
 
-</div>
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('posters')"
+      onkeydown="handleGalleryKey(event,'posters')"
+    >
 
+      <h3>
+        📢 Posters & Flyers
+      </h3>
 
+      <p class="muted">
 
-<div
-class="glass service-card"
-onclick="openGallery('branding')">
+        Promotional graphics for businesses,
+        events and campaigns.
 
-<h3>
-✨ Brand Visuals
-</h3>
+      </p>
 
-<p class="muted">
-Consistent visual systems
-that make brands memorable.
-</p>
+      <span class="view-work">
+        View work →
+      </span>
 
-<span class="view-work">
-View work →
-</span>
+    </div>
 
-</div>
 
+    <div
+      class="glass service-card"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('branding')"
+      onkeydown="handleGalleryKey(event,'branding')"
+    >
 
-</div>
+      <h3>
+        ✨ Brand Visuals
+      </h3>
+
+      <p class="muted">
+
+        Consistent visual systems
+        that make brands memorable.
+
+      </p>
+
+      <span class="view-work">
+        View work →
+      </span>
+
+    </div>
+
+  </div>
 
 </section>
-
-
-
 <!-- ================= FEATURED WORK ================= -->
 
 <section
-id="work"
-class="container fade">
+  id="work"
+  class="container fade"
+>
 
+  <div class="section-head">
 
-<div class="section-head">
+    <div>
 
-<div>
+      <div class="eyebrow">
+        FEATURED WORK
+      </div>
 
-<div class="eyebrow">
-FEATURED WORK
-</div>
+      <h2>
+        Selected Projects.
+      </h2>
 
-<h2>
-Selected Work
-</h2>
+    </div>
 
-</div>
+    <p>
+      Click any project to explore the design work.
+    </p>
 
+  </div>
 
-<p>
 
-Portfolio concepts designed to show how
-I can make a business look polished,
-modern and professional.
+  <!-- FILTER BUTTONS -->
 
-</p>
+  <div class="work-tabs">
 
-</div>
+    <button
+      class="tab active"
+      data-filter="all"
+    >
+      ALL
+    </button>
 
+    <button
+      class="tab"
+      data-filter="bakery"
+    >
+      BAKERY
+    </button>
 
+    <button
+      class="tab"
+      data-filter="cafe"
+    >
+      CAFÉ
+    </button>
 
-<div class="work-tabs">
+    <button
+      class="tab"
+      data-filter="fitness"
+    >
+      FITNESS
+    </button>
 
-<button
-class="tab active"
-data-filter="all">
+    <button
+      class="tab"
+      data-filter="branding"
+    >
+      BRANDING
+    </button>
 
-ALL
+  </div>
 
-</button>
 
+  <div class="projects">
 
-<button
-class="tab"
-data-filter="bakery">
 
-BAKERY
+    <!-- PROJECT 1 -->
 
-</button>
+    <article
+      class="project project-clickable"
+      data-cat="bakery"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('bakeryProject')"
+      onkeydown="handleGalleryKey(event,'bakeryProject')"
+    >
 
+      <div class="project-inner">
 
-<button
-class="tab"
-data-filter="cafe">
+        <div class="mock">
+          🧁
+        </div>
 
-CAFÉ
+        <div class="num">
+          BAKERY • SOCIAL MEDIA
+        </div>
 
-</button>
+        <h3>
+          Crème & Crust
+        </h3>
 
+        <p class="muted">
 
-<button
-class="tab"
-data-filter="fitness">
+          A warm bakery visual system created
+          to make products feel premium,
+          inviting and memorable.
 
-FITNESS
+        </p>
 
-</button>
+      </div>
 
+    </article>
 
-<button
-class="tab"
-data-filter="branding">
 
-BRANDING
+    <!-- PROJECT 2 -->
 
-</button>
+    <article
+      class="project project-clickable"
+      data-cat="cafe"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('cafeProject')"
+      onkeydown="handleGalleryKey(event,'cafeProject')"
+    >
 
-</div>
+      <div class="project-inner">
 
+        <div class="mock">
+          ☕
+        </div>
 
+        <div class="num">
+          CAFÉ • SOCIAL MEDIA
+        </div>
 
-<div class="projects">
+        <h3>
+          Brew & Bean
+        </h3>
 
+        <p class="muted">
 
-<article
-class="project"
-data-cat="bakery">
+          Modern café graphics designed
+          around coffee culture,
+          atmosphere and everyday moments.
 
-<div class="project-inner">
+        </p>
 
-<div class="mock">
-🥐
-</div>
+      </div>
 
-<h3>
-Crème & Crust
-</h3>
+    </article>
 
-<p class="muted">
-Bakery branding • social media • promotional design
-</p>
 
-</div>
+    <!-- PROJECT 3 -->
 
-</article>
+    <article
+      class="project project-clickable"
+      data-cat="fitness"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('fitnessProject')"
+      onkeydown="handleGalleryKey(event,'fitnessProject')"
+    >
 
+      <div class="project-inner">
 
+        <div class="mock">
+          🏋️
+        </div>
 
-<article
-class="project"
-data-cat="cafe">
+        <div class="num">
+          FITNESS • CAMPAIGN
+        </div>
 
-<div class="project-inner">
+        <h3>
+          Iron District
+        </h3>
 
-<div class="mock">
-☕
-</div>
+        <p class="muted">
 
-<h3>
-Brew & Bean
-</h3>
+          Bold fitness visuals built
+          around strength, discipline
+          and high-energy branding.
 
-<p class="muted">
-Coffee campaign • menu • weekend offer
-</p>
+        </p>
 
-</div>
+      </div>
 
-</article>
+    </article>
 
 
+    <!-- PROJECT 4 -->
 
-<article
-class="project"
-data-cat="fitness">
+    <article
+      class="project project-clickable"
+      data-cat="branding"
+      role="button"
+      tabindex="0"
+      onclick="openGallery('brandProject')"
+      onkeydown="handleGalleryKey(event,'brandProject')"
+    >
 
-<div class="project-inner">
+      <div class="project-inner">
 
-<div class="mock">
-🏋️
-</div>
+        <div class="mock">
+          ✦
+        </div>
 
-<h3>
-Iron District
-</h3>
+        <div class="num">
+          BRANDING • VISUAL IDENTITY
+        </div>
 
-<p class="muted">
-Membership campaign • transformation • workout carousel
-</p>
+        <h3>
+          Canvadesigner
+        </h3>
 
-</div>
+        <p class="muted">
 
-</article>
+          A visual identity focused
+          on modern digital design,
+          creativity and bold presentation.
 
+        </p>
 
+      </div>
 
-<article
-class="project"
-data-cat="branding">
+    </article>
 
-<div class="project-inner">
-
-<div class="mock">
-✦
-</div>
-
-<h3>
-Canvadesigner
-</h3>
-
-<p class="muted">
-Banner • frame • carousel • video cover • poster • thumbnail
-</p>
-
-</div>
-
-</article>
-
-
-</div>
+  </div>
 
 </section>
 
@@ -1710,226 +1970,301 @@ Banner • frame • carousel • video cover • poster • thumbnail
 
 <section class="container fade">
 
+  <div class="section-head">
 
-<div class="section-head">
+    <div>
 
-<div>
+      <div class="eyebrow">
+        CASE STUDY
+      </div>
 
-<div class="eyebrow">
-CASE STUDY
-</div>
+      <h2>
+        From idea to visual identity.
+      </h2>
 
-<h2>
-Crème & Crust
-</h2>
+    </div>
 
-</div>
+    <p>
 
-</div>
+      A closer look at how I turn
+      a simple idea into a complete
+      visual direction.
 
+    </p>
 
-
-<!-- MAIN BAKERY POSTER -->
-
-<img
-src="/assets/bakery-poster.png"
-alt="Crème & Crust main bakery poster"
-style="
-width:100%;
-border-radius:24px;
-display:block;
-object-fit:cover;
-">
+  </div>
 
 
-<!-- SUPPORTING GALLERY -->
-
-<div style="
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
-margin-top:18px;
-">
+  <div class="case">
 
 
-<img
-src="/assets/bakery-poster1.png"
-alt="Crème & Crust bakery design 1"
-style="
-width:100%;
-border-radius:20px;
-display:block;
-object-fit:cover;
-">
+    <!-- LEFT SIDE -->
+
+    <div class="glass">
+
+      <div class="num">
+        PROJECT
+      </div>
+
+      <h3 style="font-size:34px;">
+        Crème & Crust
+      </h3>
+
+      <p class="muted">
+
+        The goal was to create a warm,
+        premium bakery identity that
+        feels handcrafted and welcoming.
+
+      </p>
 
 
-<img
-src="/assets/bakery-poster2.png"
-alt="Crème & Crust bakery design 2"
-style="
-width:100%;
-border-radius:20px;
-display:block;
-object-fit:cover;
-">
+      <h4>
+        Design Direction
+      </h4>
+
+      <p class="muted">
+
+        Warm tones, product-focused
+        photography and clean typography
+        were used to create an inviting
+        visual experience.
+
+      </p>
 
 
-<img
-src="/assets/bakery-poster3.png"
-alt="Crème & Crust bakery design 3"
-style="
-width:100%;
-border-radius:20px;
-display:block;
-object-fit:cover;
-">
+      <h4>
+        Deliverables
+      </h4>
+
+      <div class="chips">
+
+        <span class="chip">
+          Social Posts
+        </span>
+
+        <span class="chip">
+          Posters
+        </span>
+
+        <span class="chip">
+          Promotional Graphics
+        </span>
+
+        <span class="chip">
+          Brand Visuals
+        </span>
+
+      </div>
 
 
-<img
-src="/assets/Iron & Grit gym poster (1).png"
-alt="Iron District gym banner"
-style="
-width:100%;
-border-radius:20px;
-display:block;
-object-fit:cover;
-">
+      <div class="palette">
 
-  
-<img
-src="/assets/Iron & Grit gym poster.png"
-alt="Iron District gym banner"
-style="
-width:100%;
-border-radius:20px;
-display:block;
-object-fit:cover;
-">
+        <div
+          class="sw"
+          style="background:#3a2118;"
+          title="Dark Brown"
+        ></div>
 
+        <div
+          class="sw"
+          style="background:#c98b63;"
+          title="Warm Brown"
+        ></div>
 
-  
-<img
-src="/assets/Iron & Grit gym poster2.png"
-alt="Iron District gym banner"
-style="
-width:100%;
-border-radius:20px;
-display:block;
-object-fit:cover;
-">
+        <div
+          class="sw"
+          style="background:#f3d5b5;"
+          title="Cream"
+        ></div>
+
+        <div
+          class="sw"
+          style="background:#fff4e8;"
+          title="Light Cream"
+        ></div>
+
+      </div>
+
+    </div>
 
 
-  
-<img
-src="/assets/Wren & Ochre fashion poster.png"
-alt="Wren & Ochre fashion poster"
-style="
-width:100%;
-border-radius:20px;
-display:block;
-object-fit:cover;
-">
+    <!-- RIGHT SIDE -->
 
-  
-<img
-src="/assets/Wren & Ochre fashion poster 1.png"
-alt="wren & ochre fashion poster"
-style="
-width:100%;
-border-radius:24px;
-display:block;
-object-fit:cover;
-">
+    <div class="glass">
 
+      <img
+        class="case-main-image"
+        src="/assets/bakery-poster.png"
+        alt="Crème and Crust bakery poster"
+        loading="lazy"
+      >
 
-</div>
+      <div class="case-gallery">
 
+        <img
+          src="/assets/bakery-poster1.png"
+          alt="Bakery design example 1"
+          loading="lazy"
+        >
 
+        <img
+          src="/assets/bakery-poster2.png"
+          alt="Bakery design example 2"
+          loading="lazy"
+        >
 
-<div
-class="case"
-style="margin-top:20px;">
+        <img
+          src="/assets/bakery-poster3.png"
+          alt="Bakery design example 3"
+          loading="lazy"
+        >
 
+      </div>
 
-<div class="glass">
+    </div>
 
-<div class="num">
-THE CHALLENGE
-</div>
+  </div>
 
-<h3>
-Create a premium bakery identity.
-</h3>
-
-<p class="muted">
-
-Build a visual direction that instantly
-communicates freshness, indulgence and quality.
-
-</p>
-
-
-<div class="palette">
-
-<div
-class="sw"
-style="background:#f3e7d3">
-</div>
-
-<div
-class="sw"
-style="background:#b78961">
-</div>
-
-<div
-class="sw"
-style="background:#4c2e24">
-</div>
-
-<div
-class="sw"
-style="background:#d4af37">
-</div>
-
-</div>
-
-</div>
+</section>
 
 
 
-<div class="glass">
+<!-- ================= MORE DESIGN WORK ================= -->
 
-<div class="num">
-THE APPROACH
-</div>
+<section class="container fade">
 
-<h3>
-Editorial layouts + appetizing visuals.
-</h3>
+  <div class="section-head">
 
-<p class="muted">
+    <div>
 
-Color palette, typography, logo direction,
-poster, carousel, menu and Instagram feed presentation.
+      <div class="eyebrow">
+        MORE WORK
+      </div>
 
-</p>
+      <h2>
+        Different styles. One creative approach.
+      </h2>
 
+    </div>
 
-<div
-class="mock"
-style="
-height:180px;
-margin-top:22px;
-">
-
-🍰
-
-</div>
-
-</div>
+  </div>
 
 
-</div>
+  <div class="grid3">
+
+
+    <!-- FITNESS -->
+
+    <div
+      class="glass service-card"
+      onclick="openGallery('fitnessProject')"
+      onkeydown="handleGalleryKey(event,'fitnessProject')"
+      role="button"
+      tabindex="0"
+    >
+
+      <img
+        src="/assets/Iron & Grit gym poster (1).png"
+        alt="Iron and Grit gym design"
+        loading="lazy"
+        style="
+          width:100%;
+          height:300px;
+          object-fit:cover;
+          border-radius:18px;
+        "
+      >
+
+      <h3>
+        Iron & Grit
+      </h3>
+
+      <p class="muted">
+        Fitness campaign visuals.
+      </p>
+
+      <span class="view-work">
+        View project →
+      </span>
+
+    </div>
+
+
+    <!-- FITNESS 2 -->
+
+    <div
+      class="glass service-card"
+      onclick="openGallery('fitnessProject')"
+      onkeydown="handleGalleryKey(event,'fitnessProject')"
+      role="button"
+      tabindex="0"
+    >
+
+      <img
+        src="/assets/Iron & Grit gym poster.png"
+        alt="Iron and Grit gym poster"
+        loading="lazy"
+        style="
+          width:100%;
+          height:300px;
+          object-fit:cover;
+          border-radius:18px;
+        "
+      >
+
+      <h3>
+        Strength Campaign
+      </h3>
+
+      <p class="muted">
+        Bold promotional fitness graphics.
+      </p>
+
+      <span class="view-work">
+        View project →
+      </span>
+
+    </div>
+
+
+    <!-- FASHION -->
+
+    <div
+      class="glass service-card"
+      onclick="openGallery('fashionProject')"
+      onkeydown="handleGalleryKey(event,'fashionProject')"
+      role="button"
+      tabindex="0"
+    >
+
+      <img
+        src="/assets/Wren & Ochre fashion poster.png"
+        alt="Wren and Ochre fashion poster"
+        loading="lazy"
+        style="
+          width:100%;
+          height:300px;
+          object-fit:cover;
+          border-radius:18px;
+        "
+      >
+
+      <h3>
+        Wren & Ochre
+      </h3>
+
+      <p class="muted">
+        Fashion campaign design.
+      </p>
+
+      <span class="view-work">
+        View project →
+      </span>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -1938,115 +2273,188 @@ margin-top:22px;
 <!-- ================= SERVICES ================= -->
 
 <section
-id="services"
-class="container fade">
+  id="services"
+  class="container fade"
+>
+
+  <div class="section-head">
+
+    <div>
+
+      <div class="eyebrow">
+        SERVICES
+      </div>
+
+      <h2>
+        Let’s Create Something Great.
+      </h2>
+
+    </div>
+
+    <p>
+
+      Need something designed?
+      Click the service you need and
+      you'll be taken directly to the project form.
+
+    </p>
+
+  </div>
 
 
-<div class="section-head">
-
-<div>
-
-<div class="eyebrow">
-SERVICES
-</div>
-
-<h2>
-Let’s Create Something Great.
-</h2>
-
-</div>
-
-</div>
+  <div class="grid3 services">
 
 
+    <!-- SOCIAL MEDIA -->
 
-<div class="grid3 services">
+    <div
+      class="glass contact-service"
+      role="button"
+      tabindex="0"
+      onclick="goToContact('Social Media Design')"
+      onkeydown="handleServiceKey(event,'Social Media Design')"
+    >
 
+      <div class="num">
+        01
+      </div>
 
-<div class="glass">
+      <h3>
+        Social Media Design
+      </h3>
 
-<h3>
-Social Media Design
-</h3>
+      <p class="muted">
+        Posts • Stories • Carousels
+      </p>
 
-<p class="muted">
-Posts • Stories • Carousels
-</p>
-
-</div>
-
-
-
-<div class="glass">
-
-<h3>
-Banner Design
-</h3>
-
-<p class="muted">
-Digital • Social Media • Promotional
-</p>
-
-</div>
+    </div>
 
 
+    <!-- BANNER -->
 
-<div class="glass">
+    <div
+      class="glass contact-service"
+      role="button"
+      tabindex="0"
+      onclick="goToContact('Banner')"
+      onkeydown="handleServiceKey(event,'Banner')"
+    >
 
-<h3>
-Video Design
-</h3>
+      <div class="num">
+        02
+      </div>
 
-<p class="muted">
-Reels • Motion graphics • Covers
-</p>
+      <h3>
+        Banner Design
+      </h3>
 
-</div>
+      <p class="muted">
+        Digital • Social Media • Promotional
+      </p>
 
-
-
-<div class="glass">
-
-<h3>
-Thumbnail Design
-</h3>
-
-<p class="muted">
-YouTube • Video content
-</p>
-
-</div>
+    </div>
 
 
+    <!-- VIDEO -->
 
-<div class="glass">
+    <div
+      class="glass contact-service"
+      role="button"
+      tabindex="0"
+      onclick="goToContact('Video')"
+      onkeydown="handleServiceKey(event,'Video')"
+    >
 
-<h3>
-Posters & Flyers
-</h3>
+      <div class="num">
+        03
+      </div>
 
-<p class="muted">
-Events • Promotions • Marketing
-</p>
+      <h3>
+        Video Design
+      </h3>
 
-</div>
+      <p class="muted">
+        Reels • Motion Graphics • Covers
+      </p>
 
-
-
-<div class="glass">
-
-<h3>
-Branding
-</h3>
-
-<p class="muted">
-Logo • Brand visuals • Business materials
-</p>
-
-</div>
+    </div>
 
 
-</div>
+    <!-- THUMBNAIL -->
+
+    <div
+      class="glass contact-service"
+      role="button"
+      tabindex="0"
+      onclick="goToContact('Thumbnail')"
+      onkeydown="handleServiceKey(event,'Thumbnail')"
+    >
+
+      <div class="num">
+        04
+      </div>
+
+      <h3>
+        Thumbnail Design
+      </h3>
+
+      <p class="muted">
+        YouTube • Video Content
+      </p>
+
+    </div>
+
+
+    <!-- POSTER -->
+
+    <div
+      class="glass contact-service"
+      role="button"
+      tabindex="0"
+      onclick="goToContact('Poster')"
+      onkeydown="handleServiceKey(event,'Poster')"
+    >
+
+      <div class="num">
+        05
+      </div>
+
+      <h3>
+        Posters & Flyers
+      </h3>
+
+      <p class="muted">
+        Events • Promotions • Marketing
+      </p>
+
+    </div>
+
+
+    <!-- BRANDING -->
+
+    <div
+      class="glass contact-service"
+      role="button"
+      tabindex="0"
+      onclick="goToContact('Branding')"
+      onkeydown="handleServiceKey(event,'Branding')"
+    >
+
+      <div class="num">
+        06
+      </div>
+
+      <h3>
+        Branding
+      </h3>
+
+      <p class="muted">
+        Logo • Brand Visuals • Business Materials
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -2055,121 +2463,123 @@ Logo • Brand visuals • Business materials
 <!-- ================= PROCESS ================= -->
 
 <section
-id="process"
-class="container fade">
+  id="process"
+  class="container fade"
+>
+
+  <div class="section-head">
+
+    <div>
+
+      <div class="eyebrow">
+        PROCESS
+      </div>
+
+      <h2>
+        Simple. Clear. Creative.
+      </h2>
+
+    </div>
+
+    <p>
+
+      A straightforward process that
+      keeps every project organized
+      from idea to final design.
+
+    </p>
+
+  </div>
 
 
-<div class="section-head">
-
-<div>
-
-<div class="eyebrow">
-PROCESS
-</div>
-
-<h2>
-How I Turn Ideas Into Designs
-</h2>
-
-</div>
-
-</div>
+  <div class="timeline">
 
 
+    <div class="glass">
 
-<div class="timeline">
+      <div class="num">
+        01
+      </div>
 
+      <h3>
+        Brief
+      </h3>
 
-<div class="glass">
+      <p class="muted">
+        Understanding your idea and requirements.
+      </p>
 
-<div class="num">
-01
-</div>
-
-<h3>
-Discover
-</h3>
-
-<p class="muted">
-Understand your idea, audience and goals.
-</p>
-
-</div>
+    </div>
 
 
+    <div class="glass">
 
-<div class="glass">
+      <div class="num">
+        02
+      </div>
 
-<div class="num">
-02
-</div>
+      <h3>
+        Research
+      </h3>
 
-<h3>
-Plan
-</h3>
+      <p class="muted">
+        Exploring your audience, style and direction.
+      </p>
 
-<p class="muted">
-Develop the concept and visual direction.
-</p>
-
-</div>
-
+    </div>
 
 
-<div class="glass">
+    <div class="glass">
 
-<div class="num">
-03
-</div>
+      <div class="num">
+        03
+      </div>
 
-<h3>
-Design
-</h3>
+      <h3>
+        Design
+      </h3>
 
-<p class="muted">
-Turn the concept into a polished visual.
-</p>
+      <p class="muted">
+        Turning the concept into engaging visuals.
+      </p>
 
-</div>
-
-
-
-<div class="glass">
-
-<div class="num">
-04
-</div>
-
-<h3>
-Refine
-</h3>
-
-<p class="muted">
-Improve the design based on feedback.
-</p>
-
-</div>
+    </div>
 
 
+    <div class="glass">
 
-<div class="glass">
+      <div class="num">
+        04
+      </div>
 
-<div class="num">
-05
-</div>
+      <h3>
+        Refine
+      </h3>
 
-<h3>
-Deliver
-</h3>
+      <p class="muted">
+        Improving the design using your feedback.
+      </p>
 
-<p class="muted">
-Final files ready to publish.
-</p>
-
-</div>
+    </div>
 
 
-</div>
+    <div class="glass">
+
+      <div class="num">
+        05
+      </div>
+
+      <h3>
+        Deliver
+      </h3>
+
+      <p class="muted">
+        Finalizing and delivering your design.
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -2179,80 +2589,89 @@ Final files ready to publish.
 
 <section class="container fade">
 
+  <div class="section-head">
 
-<div class="section-head">
+    <div>
 
-<div>
+      <div class="eyebrow">
+        DESIGN + TECHNOLOGY
+      </div>
 
-<div class="eyebrow">
-DESIGN + TECHNOLOGY
-</div>
+      <h2>
+        Creativity powered by modern tools.
+      </h2>
 
-<h2>
-Where Design Meets Technology.
-</h2>
+    </div>
 
-</div>
-
-
-<p>
-
-Alongside design, I’m exploring Computer Science,
-Artificial Intelligence and Machine Learning —
-combining creativity with technology to explore
-new ways of creating.
-
-</p>
-
-</div>
+  </div>
 
 
-
-<div class="grid3">
-
-
-<div class="glass">
-
-<h3>
-DESIGN
-</h3>
-
-<p class="muted">
-Canva • Graphic Design • Visual Storytelling
-</p>
-
-</div>
+  <div class="grid3">
 
 
+    <div class="glass">
 
-<div class="glass">
+      <div class="num">
+        DESIGN
+      </div>
 
-<h3>
-CREATIVE
-</h3>
+      <h3>
+        Canva
+      </h3>
 
-<p class="muted">
-Video • Branding • Content Creation
-</p>
+      <p class="muted">
 
-</div>
+        Creating social graphics,
+        presentations, posters,
+        thumbnails and brand visuals.
 
+      </p>
 
-
-<div class="glass">
-
-<h3>
-TECH
-</h3>
-
-<p class="muted">
-Computer Science • AI • Machine Learning
-</p>
-
-</div>
+    </div>
 
 
-</div>
+    <div class="glass">
+
+      <div class="num">
+        CREATIVE
+      </div>
+
+      <h3>
+        Visual Storytelling
+      </h3>
+
+      <p class="muted">
+
+        Combining typography,
+        composition and imagery
+        to communicate ideas.
+
+      </p>
+
+    </div>
+
+
+    <div class="glass">
+
+      <div class="num">
+        DIGITAL
+      </div>
+
+      <h3>
+        Web & AI
+      </h3>
+
+      <p class="muted">
+
+        Exploring modern technology,
+        web design and AI-powered
+        creative workflows.
+
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -2261,280 +2680,320 @@ Computer Science • AI • Machine Learning
 <!-- ================= CONTACT ================= -->
 
 <section
-id="contact"
-class="container fade">
+  id="contact"
+  class="container fade"
+  style="scroll-margin-top:110px;"
+>
 
+  <div class="section-head">
 
-<div class="contact">
+    <div>
 
+      <div class="eyebrow">
+        CONTACT
+      </div>
 
-<div>
+      <h2>
+        Have an Idea? Let’s Design It.
+      </h2>
 
+    </div>
 
-<div class="eyebrow">
-CONTACT
-</div>
+    <p>
 
+      Tell me about your project,
+      what you need designed,
+      and the direction you have in mind.
 
-<h2 style="
-font-size:clamp(42px,6vw,78px);
-line-height:1.05;
-">
+    </p>
 
-Have an<br>
+  </div>
 
-Idea?<br>
 
-<span class="grad">
+  <div class="contact">
 
-Let's Design<br>
-It.
 
-</span>
+    <!-- CONTACT INFORMATION -->
 
-</h2>
+    <div class="glass">
 
+      <div class="num">
+        LET'S CONNECT
+      </div>
 
-<p>
+      <h3 style="font-size:32px;">
+        Start your next project.
+      </h3>
 
-Whether you need a social post, banner,
-carousel, video, poster, thumbnail
-or complete campaign —
-I'd love to work with you.
+      <p class="muted">
 
-</p>
+        Whether you need a social media post,
+        banner, thumbnail, poster, video
+        or complete visual campaign,
+        send me your project details.
 
+      </p>
 
-<p>
 
-<strong>
-Instagram:
-</strong>
+      <div
+        class="glass"
+        style="
+          margin-top:22px;
+          padding:18px;
+        "
+      >
 
-@canvadesigner
+        <div class="num">
+          EMAIL
+        </div>
 
-<br>
+        <p style="margin-bottom:0;">
 
+          <a href="mailto:rajsinghrajawat154@gmail.com">
+            rajsinghrajawat154@gmail.com
+          </a>
 
-<strong>
-Name:
-</strong>
+        </p>
 
-Raj Singh
+      </div>
 
-<br>
 
+      <div
+        class="glass"
+        style="
+          margin-top:14px;
+          padding:18px;
+        "
+      >
 
-<strong>
-Email:
-</strong>
+        <div class="num">
+          LINKEDIN
+        </div>
 
-rajsinghrajawat154@gmail.com
+        <p style="margin-bottom:0;">
 
-<br>
+          <a
+            href="https://www.linkedin.com/in/raj-singh-685274257/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connect with me on LinkedIn →
+          </a>
 
+        </p>
 
-<strong>
-LinkedIn:
-</strong>
+      </div>
 
+    </div>
 
-<a
-href="https://www.linkedin.com/in/raj-singh-685274257/"
-target="_blank"
-rel="noopener noreferrer">
 
-LinkedIn Profile
+    <!-- CONTACT FORM -->
 
-</a>
+    <div
+      class="glass"
+      id="contactFormBox"
+    >
 
-</p>
+      <form
+        class="form"
+        action="https://formspree.io/f/xzezpnal"
+        method="POST"
+        id="projectForm"
+      >
 
 
-</div>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        >
 
 
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        >
 
-<!-- CONTACT FORM -->
 
-<form
-class="glass form"
-action="https://formspree.io/f/xzezpnal"
-method="POST">
+        <input
+          type="text"
+          name="company"
+          placeholder="Company / Brand"
+        >
 
 
-<input
-type="text"
-name="name"
-placeholder="Name"
-required>
+        <select
+          name="service"
+          id="serviceSelect"
+          required
+        >
 
+          <option
+            value=""
+            disabled
+            selected
+          >
+            Service Required
+          </option>
 
-<input
-type="email"
-name="email"
-placeholder="Email"
-required>
+          <option value="Social Media Design">
+            Social Media Design
+          </option>
 
+          <option value="Banner">
+            Banner
+          </option>
 
-<input
-type="text"
-name="company"
-placeholder="Company / Brand">
+          <option value="Carousel">
+            Carousel
+          </option>
 
+          <option value="Video">
+            Video
+          </option>
 
-<select
-name="service"
-required>
+          <option value="Poster">
+            Poster
+          </option>
 
-<option
-value=""
-disabled
-selected>
+          <option value="Thumbnail">
+            Thumbnail
+          </option>
 
-Service Required
+          <option value="Branding">
+            Branding
+          </option>
 
-</option>
+          <option value="Complete Campaign">
+            Complete Campaign
+          </option>
 
-<option value="Social Media Design">
-Social Media Design
-</option>
+          <option value="Other">
+            Other
+          </option>
 
-<option value="Banner">
-Banner
-</option>
+        </select>
 
-<option value="Carousel">
-Carousel
-</option>
 
-<option value="Video">
-Video
-</option>
+        <select name="budget">
 
-<option value="Poster">
-Poster
-</option>
+          <option
+            value=""
+            disabled
+            selected
+          >
+            Budget
+          </option>
 
-<option value="Thumbnail">
-Thumbnail
-</option>
+          <option value="Under ₹2,000">
+            Under ₹2,000
+          </option>
 
-<option value="Complete Campaign">
-Complete Campaign
-</option>
+          <option value="₹2,000 - ₹5,000">
+            ₹2,000 – ₹5,000
+          </option>
 
-<option value="Other">
-Other
-</option>
+          <option value="₹5,000 - ₹10,000">
+            ₹5,000 – ₹10,000
+          </option>
 
-</select>
+          <option value="₹10,000+">
+            ₹10,000+
+          </option>
 
+          <option value="Let's Discuss">
+            Let’s Discuss
+          </option>
 
-<input
-type="text"
-name="budget"
-placeholder="Budget">
+        </select>
 
 
-<textarea
-name="message"
-placeholder="Project Details"
-required>
-</textarea>
+        <textarea
+          name="message"
+          placeholder="Tell me about your project..."
+          required
+        ></textarea>
 
 
-<input
-type="hidden"
-name="_subject"
-value="New Project Inquiry — Canvadesigner">
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Portfolio Project Inquiry"
+        >
 
 
-<button
-type="submit"
-class="full">
+        <button
+          class="full"
+          type="submit"
+          id="submitButton"
+        >
+          Send Project Inquiry →
+        </button>
 
-Send Project Inquiry →
 
-</button>
+        <div
+          id="success"
+          class="full muted"
+          aria-live="polite"
+        ></div>
 
+      </form>
 
-<p
-id="success"
-class="full"
-style="
-margin-top:12px;
-font-size:14px;
-">
-</p>
+    </div>
 
-
-</form>
-
-
-</div>
+  </div>
 
 </section>
 
 
 
-<!-- ================= PORTFOLIO POPUP ================= -->
+<!-- ================= PORTFOLIO MODAL ================= -->
 
 <div
-id="portfolioModal"
-class="portfolio-modal">
+  id="portfolioModal"
+  class="portfolio-modal"
+  aria-hidden="true"
+>
+
+  <div class="portfolio-box">
+
+    <button
+      class="close-gallery"
+      type="button"
+      onclick="closeGallery()"
+      aria-label="Close portfolio gallery"
+    >
+      ×
+    </button>
 
 
-<div class="portfolio-box">
+    <div class="eyebrow">
+      PORTFOLIO
+    </div>
 
 
-<button
-class="close-gallery"
-onclick="closeGallery()"
-aria-label="Close portfolio">
-
-×
-
-</button>
+    <h2 id="galleryTitle">
+      My Work
+    </h2>
 
 
-<div class="eyebrow">
-MY WORK
-</div>
+    <p
+      id="galleryDescription"
+      class="muted"
+    >
+      Selected design projects.
+    </p>
 
 
-<h2 id="galleryTitle">
-Portfolio
-</h2>
+    <div
+      id="galleryGrid"
+      class="portfolio-grid"
+    ></div>
 
-
-<p
-id="galleryDescription"
-class="muted">
-</p>
-
-
-<div
-id="galleryContent"
-class="portfolio-grid">
-</div>
-
-
-<div style="margin-top:30px;">
-
-<a
-href="#contact"
-class="btn"
-onclick="closeGallery()">
-
-Start a Project →
-
-</a>
-
-</div>
-
-
-</div>
+  </div>
 
 </div>
 
@@ -2544,449 +3003,1421 @@ Start a Project →
 
 <footer class="footer">
 
+  <div
+    class="container"
+    style="
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    "
+  >
 
-<div class="container">
+    <div>
+      © <span id="year"></span> Raj Singh • Canvadesigner
+    </div>
 
-<strong>
-CANVADESIGNER
-</strong>
+    <div>
+      Turning ideas into visuals that get noticed.
+    </div>
 
-
-<p>
-
-Designed by Raj Singh •
-Turning ideas into visuals that get noticed.
-
-</p>
-
-
-<p>
-
-© 2026 Canvadesigner.
-All rights reserved.
-
-</p>
-
-</div>
-
+  </div>
 
 </footer>
-
-
-
 <!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
+/* =====================================================
+   CURRENT YEAR
+===================================================== */
 
-/* FADE ANIMATION */
-
-const observer =
-new IntersectionObserver(
-
-entries =>
-
-entries.forEach(e => {
-
-if(e.isIntersecting)
-
-e.target.classList.add("show");
-
-}),
-
-{threshold:.12}
-
-);
-
-
-document
-.querySelectorAll(".fade")
-.forEach(el => observer.observe(el));
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
 
 
-/* FEATURED WORK FILTER */
+/* =====================================================
+   SCROLL FADE ANIMATION
+===================================================== */
 
-const tabs =
-[...document.querySelectorAll(".tab")];
+const fadeElements =
+  document.querySelectorAll(".fade");
 
-const projects =
-[...document.querySelectorAll(".project")];
+const fadeObserver =
+  new IntersectionObserver(
+    (entries) => {
 
+      entries.forEach((entry) => {
 
-tabs.forEach(t => {
+        if (entry.isIntersecting) {
 
-t.addEventListener("click", () => {
+          entry.target.classList.add("show");
 
+          fadeObserver.unobserve(entry.target);
 
-tabs.forEach(x =>
-x.classList.remove("active")
-);
+        }
 
+      });
 
-t.classList.add("active");
+    },
+    {
+      threshold: 0.12
+    }
+  );
 
+fadeElements.forEach((element) => {
 
-const filter =
-t.dataset.filter;
-
-
-projects.forEach(project => {
-
-project.style.display =
-
-(filter === "all" ||
-project.dataset.cat === filter)
-
-? "block"
-: "none";
-
-});
-
-
-});
+  fadeObserver.observe(element);
 
 });
 
 
 
-/* HERO 3D MOVEMENT */
+/* =====================================================
+   FEATURED WORK FILTER
+===================================================== */
+
+const filterButtons =
+  document.querySelectorAll(".tab");
+
+const projectCards =
+  document.querySelectorAll(".project");
+
+
+filterButtons.forEach((button) => {
+
+  button.addEventListener("click", () => {
+
+    const selectedFilter =
+      button.dataset.filter;
+
+
+    /* REMOVE ACTIVE FROM ALL BUTTONS */
+
+    filterButtons.forEach((item) => {
+
+      item.classList.remove("active");
+
+    });
+
+
+    /* ADD ACTIVE TO CLICKED BUTTON */
+
+    button.classList.add("active");
+
+
+    /* FILTER PROJECTS */
+
+    projectCards.forEach((project) => {
+
+      const category =
+        project.dataset.cat;
+
+
+      if (
+        selectedFilter === "all" ||
+        selectedFilter === category
+      ) {
+
+        project.style.display = "block";
+
+      } else {
+
+        project.style.display = "none";
+
+      }
+
+    });
+
+  });
+
+});
+
+
+
+/* =====================================================
+   HERO 3D MOUSE EFFECT
+===================================================== */
 
 const stage =
-document.querySelector(".stage");
+  document.querySelector(".stage");
 
 
-stage?.addEventListener(
-"mousemove",
-e => {
+if (stage) {
 
-const rect =
-stage.getBoundingClientRect();
+  stage.addEventListener(
+    "mousemove",
+    (event) => {
 
-
-const x =
-(e.clientX - rect.left)
-/
-rect.width
--
-.5;
+      const rect =
+        stage.getBoundingClientRect();
 
 
-const y =
-(e.clientY - rect.top)
-/
-rect.height
--
-.5;
+      const mouseX =
+        event.clientX - rect.left;
 
 
-stage.style.transform =
-`rotateY(${x * 3}deg)
-rotateX(${-y * 3}deg)`;
-
-});
+      const mouseY =
+        event.clientY - rect.top;
 
 
-stage?.addEventListener(
-"mouseleave",
-() => {
-
-stage.style.transform = "";
-
-});
+      const rotateY =
+        ((mouseX / rect.width) - 0.5) * 8;
 
 
+      const rotateX =
+        ((mouseY / rect.height) - 0.5) * -8;
 
-/* ================= PORTFOLIO DATA ================= */
+
+      stage.style.transform =
+        `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+
+    }
+  );
+
+
+  stage.addEventListener(
+    "mouseleave",
+    () => {
+
+      stage.style.transform =
+        "rotateX(0deg) rotateY(0deg)";
+
+    }
+  );
+
+}
+
+
+
+/* =====================================================
+   PORTFOLIO DATA
+===================================================== */
 
 const portfolioData = {
 
 
-social: {
+  /* ================= SOCIAL MEDIA ================= */
 
-title:
-"Social Media Posts",
+  social: {
 
-description:
-"Creative social media designs for brands, businesses and creators.",
+    title: "Social Media Design",
 
-images: [
+    description:
+      "Creative social media graphics designed to attract attention and communicate clearly.",
 
-"/assets/bakery-poster1.png",
+    images: [
 
-"/assets/bakery-poster2.png",
+      /*
+      Add your social media designs here.
 
-"/assets/bakery-poster3.png"
+      Example:
 
-]
+      "/assets/social-post-1.png",
+      "/assets/social-post-2.png",
+      "/assets/social-post-3.png"
+      */
 
-},
+    ]
 
-
-
-banners: {
-
-title:
-"Banner Designs",
-
-description:
-"Professional promotional and social media banners.",
-
-images: [
-
-"/assets/gym banner.png"
-
-]
-
-},
+  },
 
 
 
-frames: {
+  /* ================= BANNERS ================= */
 
-title:
-"Frames",
+  banners: {
 
-description:
-"Creative frames and visual layouts for digital content.",
+    title: "Banner Design",
 
-images: []
+    description:
+      "Digital, promotional and social media banners created for brands and campaigns.",
 
-},
+    images: [
 
+      /*
+      Example:
 
+      "/assets/banner-1.png",
+      "/assets/banner-2.png",
+      "/assets/banner-3.png"
+      */
 
-carousels: {
+    ]
 
-title:
-"Carousel Designs",
-
-description:
-"Swipe-friendly social media carousel designs.",
-
-images: []
-
-},
+  },
 
 
 
-videos: {
+  /* ================= FRAMES ================= */
 
-title:
-"Video Designs",
+  frames: {
 
-description:
-"Video graphics, reels and motion content.",
+    title: "Frames & Layouts",
 
-images: []
+    description:
+      "Creative frames and layouts created for digital content and visual storytelling.",
 
-},
+    images: [
 
+      /*
+      Example:
 
+      "/assets/frame-1.png",
+      "/assets/frame-2.png"
+      */
 
-thumbnails: {
+    ]
 
-title:
-"YouTube Thumbnails",
-
-description:
-"Attention-grabbing thumbnails designed for video content.",
-
-images: []
-
-},
+  },
 
 
 
-posters: {
+  /* ================= CAROUSELS ================= */
 
-title:
-"Posters & Flyers",
+  carousels: {
 
-description:
-"Promotional posters, flyers and campaign designs.",
+    title: "Carousel Design",
 
-images: [
+    description:
+      "Multi-slide social media designs created to make information engaging and easy to consume.",
 
-"/assets/bakery-poster.png",
+    images: [
 
-"/assets/Wren & Ochre fashion poster.png"
+      /*
+      Example:
 
-]
+      "/assets/carousel-1.png",
+      "/assets/carousel-2.png",
+      "/assets/carousel-3.png"
+      */
 
-},
+    ]
+
+  },
 
 
 
-branding: {
+  /* ================= VIDEOS ================= */
 
-title:
-"Brand Visuals",
+  videos: {
 
-description:
-"Visual identities and creative brand systems.",
+    title: "Video Design",
 
-images: []
+    description:
+      "Video graphics, reel covers and creative visual content.",
 
-}
+    images: [
 
+      /*
+      You can add video cover images here.
+
+      Example:
+
+      "/assets/video-cover-1.png",
+      "/assets/video-cover-2.png"
+      */
+
+    ]
+
+  },
+
+
+
+  /* ================= THUMBNAILS ================= */
+
+  thumbnails: {
+
+    title: "Thumbnail Design",
+
+    description:
+      "Attention-grabbing thumbnails designed for YouTube and video content.",
+
+    images: [
+
+      /*
+      Example:
+
+      "/assets/thumbnail-1.png",
+      "/assets/thumbnail-2.png",
+      "/assets/thumbnail-3.png"
+      */
+
+    ]
+
+  },
+
+
+
+  /* ================= POSTERS ================= */
+
+  posters: {
+
+    title: "Posters & Flyers",
+
+    description:
+      "Promotional posters and marketing graphics created for businesses, campaigns and events.",
+
+    images: [
+
+      "/assets/bakery-poster.png",
+
+      "/assets/bakery-poster1.png",
+
+      "/assets/bakery-poster2.png",
+
+      "/assets/bakery-poster3.png",
+
+      "/assets/Iron & Grit gym poster (1).png",
+
+      "/assets/Iron & Grit gym poster.png",
+
+      "/assets/Iron & Grit gym poster2.png",
+
+      "/assets/Wren & Ochre fashion poster.png",
+
+      "/assets/Wren & Ochre fashion poster 1.png"
+
+    ]
+
+  },
+
+
+
+  /* ================= BRANDING ================= */
+
+  branding: {
+
+    title: "Brand Visuals",
+
+    description:
+      "Consistent visual designs created to help brands develop a recognizable identity.",
+
+    images: [
+
+      /*
+      Add your branding designs here.
+
+      Example:
+
+      "/assets/branding-1.png",
+      "/assets/branding-2.png"
+      */
+
+    ]
+
+  },
+
+
+
+  /* =================================================
+     FEATURED PROJECT:
+     CRÈME & CRUST
+  ================================================= */
+
+  bakeryProject: {
+
+    title: "Crème & Crust",
+
+    description:
+      "A warm bakery visual identity focused on premium product presentation and inviting promotional design.",
+
+    images: [
+
+      "/assets/bakery-poster.png",
+
+      "/assets/bakery-poster1.png",
+
+      "/assets/bakery-poster2.png",
+
+      "/assets/bakery-poster3.png"
+
+    ]
+
+  },
+
+
+
+  /* =================================================
+     FEATURED PROJECT:
+     BREW & BEAN
+  ================================================= */
+
+  cafeProject: {
+
+    title: "Brew & Bean",
+
+    description:
+      "A modern café concept focused on warm tones, coffee culture and social media presentation.",
+
+    images: [
+
+      /*
+      IMPORTANT:
+
+      Add your Brew & Bean images here when
+      you upload them to your assets folder.
+
+      Example:
+
+      "/assets/brew-bean-1.png",
+      "/assets/brew-bean-2.png",
+      "/assets/brew-bean-3.png"
+      */
+
+    ]
+
+  },
+
+
+
+  /* =================================================
+     FEATURED PROJECT:
+     IRON DISTRICT / IRON & GRIT
+  ================================================= */
+
+  fitnessProject: {
+
+    title: "Iron & Grit — Fitness Campaign",
+
+    description:
+      "Bold fitness campaign visuals designed around strength, discipline and high-energy presentation.",
+
+    images: [
+
+      "/assets/Iron & Grit gym poster (1).png",
+
+      "/assets/Iron & Grit gym poster.png",
+
+      "/assets/Iron & Grit gym poster2.png"
+
+    ]
+
+  },
+
+
+
+  /* =================================================
+     FEATURED PROJECT:
+     CANVADESIGNER
+  ================================================= */
+
+  brandProject: {
+
+    title: "Canvadesigner",
+
+    description:
+      "Personal branding and visual identity work created around modern digital design.",
+
+    images: [
+
+      /*
+      Add your Canvadesigner brand images here.
+
+      Example:
+
+      "/assets/canvadesigner-1.png",
+      "/assets/canvadesigner-2.png"
+      */
+
+    ]
+
+  },
+
+
+
+  /* =================================================
+     FASHION PROJECT
+  ================================================= */
+
+  fashionProject: {
+
+    title: "Wren & Ochre",
+
+    description:
+      "Fashion-focused promotional visuals with an elegant and editorial design direction.",
+
+    images: [
+
+      "/assets/Wren & Ochre fashion poster.png",
+
+      "/assets/Wren & Ochre fashion poster 1.png"
+
+    ]
+
+  }
 
 };
 
 
 
-/* ================= OPEN GALLERY ================= */
+/* =====================================================
+   OPEN PORTFOLIO GALLERY
+===================================================== */
 
 function openGallery(category) {
 
-
-const data =
-portfolioData[category];
-
-
-if(!data) return;
+  const modal =
+    document.getElementById(
+      "portfolioModal"
+    );
 
 
-document
-.getElementById("galleryTitle")
-.textContent =
-data.title;
+  const title =
+    document.getElementById(
+      "galleryTitle"
+    );
 
 
-document
-.getElementById("galleryDescription")
-.textContent =
-data.description;
+  const description =
+    document.getElementById(
+      "galleryDescription"
+    );
 
 
-const gallery =
-document.getElementById(
-"galleryContent"
-);
+  const grid =
+    document.getElementById(
+      "galleryGrid"
+    );
 
 
-gallery.innerHTML = "";
+  const data =
+    portfolioData[category];
 
 
-/* NO PROJECTS YET */
+  /* IF CATEGORY DOES NOT EXIST */
 
-if(data.images.length === 0) {
+  if (!data) {
+
+    console.warn(
+      "Portfolio category not found:",
+      category
+    );
+
+    return;
+
+  }
 
 
-gallery.innerHTML = `
+  /* SET TITLE */
 
-<div class="project-placeholder">
+  title.textContent =
+    data.title;
 
-More projects coming soon ✦
 
-</div>
+  /* SET DESCRIPTION */
 
-`;
+  description.textContent =
+    data.description;
 
+
+  /* CLEAR OLD GALLERY */
+
+  grid.innerHTML = "";
+
+
+  /* CHECK IF IMAGES EXIST */
+
+  if (
+    !data.images ||
+    data.images.length === 0
+  ) {
+
+    const placeholder =
+      document.createElement("div");
+
+
+    placeholder.className =
+      "project-placeholder";
+
+
+    placeholder.innerHTML = `
+
+      <div>
+
+        <div
+          style="
+            font-size:42px;
+            margin-bottom:15px;
+          "
+        >
+          ✦
+        </div>
+
+        <strong
+          style="
+            color:#ffffff;
+            display:block;
+            margin-bottom:8px;
+          "
+        >
+          More work coming soon
+        </strong>
+
+        <span>
+          New ${data.title.toLowerCase()}
+          projects will be added here.
+        </span>
+
+      </div>
+
+    `;
+
+
+    grid.appendChild(
+      placeholder
+    );
+
+  } else {
+
+
+    /* CREATE IMAGE CARDS */
+
+    data.images.forEach(
+      (imagePath, index) => {
+
+        const image =
+          document.createElement("img");
+
+
+        image.src =
+          imagePath;
+
+
+        image.alt =
+          `${data.title} design ${index + 1}`;
+
+
+        image.loading =
+          "lazy";
+
+
+        /* IF IMAGE CANNOT LOAD */
+
+        image.onerror =
+          function () {
+
+            const placeholder =
+              document.createElement("div");
+
+
+            placeholder.className =
+              "project-placeholder";
+
+
+            placeholder.innerHTML = `
+
+              <div>
+
+                <strong
+                  style="
+                    color:white;
+                    display:block;
+                    margin-bottom:8px;
+                  "
+                >
+                  Image unavailable
+                </strong>
+
+                <span>
+                  Check this file in your assets folder:
+                </span>
+
+                <br><br>
+
+                <code
+                  style="
+                    font-size:11px;
+                    color:#c5b7ff;
+                    word-break:break-all;
+                  "
+                >
+                  ${imagePath}
+                </code>
+
+              </div>
+
+            `;
+
+
+            image.replaceWith(
+              placeholder
+            );
+
+          };
+
+
+        grid.appendChild(
+          image
+        );
+
+      }
+    );
+
+  }
+
+
+  /* SHOW MODAL */
+
+  modal.classList.add(
+    "active"
+  );
+
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+
+  /* STOP PAGE FROM SCROLLING */
+
+  document.body.style.overflow =
+    "hidden";
+
+
+  /* SCROLL MODAL TO TOP */
+
+  modal.scrollTop =
+    0;
 
 }
 
 
-/* SHOW IMAGES */
 
-else {
+/* =====================================================
+   KEYBOARD SUPPORT FOR PORTFOLIO CARDS
+===================================================== */
 
+function handleGalleryKey(
+  event,
+  category
+) {
 
-data.images.forEach(image => {
+  if (
+    event.key === "Enter" ||
+    event.key === " "
+  ) {
 
+    event.preventDefault();
 
-const img =
-document.createElement("img");
+    openGallery(
+      category
+    );
 
-
-img.src =
-image;
-
-
-img.alt =
-data.title;
-
-
-img.loading =
-"lazy";
-
-
-gallery.appendChild(img);
-
-
-});
-
-
-}
-
-
-document
-.getElementById("portfolioModal")
-.classList.add("active");
-
-
-document.body.style.overflow =
-"hidden";
-
+  }
 
 }
 
 
 
-/* ================= CLOSE GALLERY ================= */
+/* =====================================================
+   CLOSE PORTFOLIO GALLERY
+===================================================== */
 
 function closeGallery() {
 
+  const modal =
+    document.getElementById(
+      "portfolioModal"
+    );
 
-document
-.getElementById("portfolioModal")
-.classList.remove("active");
+
+  modal.classList.remove(
+    "active"
+  );
 
 
-document.body.style.overflow =
-"";
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
 
+
+  document.body.style.overflow =
+    "";
 
 }
 
 
 
-/* ESC KEY CLOSE */
+/* =====================================================
+   CLICK OUTSIDE MODAL TO CLOSE
+===================================================== */
+
+const portfolioModal =
+  document.getElementById(
+    "portfolioModal"
+  );
+
+
+portfolioModal.addEventListener(
+  "click",
+  (event) => {
+
+    if (
+      event.target === portfolioModal
+    ) {
+
+      closeGallery();
+
+    }
+
+  }
+);
+
+
+
+/* =====================================================
+   ESC KEY CLOSES MODAL
+===================================================== */
 
 document.addEventListener(
-"keydown",
-event => {
+  "keydown",
+  (event) => {
+
+    if (
+      event.key === "Escape" &&
+      portfolioModal.classList.contains(
+        "active"
+      )
+    ) {
+
+      closeGallery();
+
+    }
+
+  }
+);
 
 
-if(event.key === "Escape") {
 
-closeGallery();
+/* =====================================================
+   SERVICES -> CONTACT FORM
+
+   This is the important new functionality.
+
+   When someone clicks:
+   Social Media Design
+   Banner Design
+   Video Design
+   Thumbnail Design
+   Posters & Flyers
+   Branding
+
+   The website:
+   1. Selects that service automatically
+   2. Scrolls to the contact form
+   3. Highlights the form
+   4. Focuses the name field
+===================================================== */
+
+function goToContact(service) {
+
+  const contactSection =
+    document.getElementById(
+      "contact"
+    );
+
+
+  const serviceSelect =
+    document.getElementById(
+      "serviceSelect"
+    );
+
+
+  const formBox =
+    document.getElementById(
+      "contactFormBox"
+    );
+
+
+  const nameInput =
+    document.querySelector(
+      '#projectForm input[name="name"]'
+    );
+
+
+  /* SELECT SERVICE */
+
+  if (serviceSelect) {
+
+    serviceSelect.value =
+      service;
+
+
+    serviceSelect.dispatchEvent(
+      new Event(
+        "change",
+        {
+          bubbles:true
+        }
+      )
+    );
+
+  }
+
+
+  /* SCROLL TO CONTACT */
+
+  if (contactSection) {
+
+    contactSection.scrollIntoView({
+      behavior:"smooth",
+      block:"start"
+    });
+
+  }
+
+
+  /* HIGHLIGHT FORM */
+
+  if (formBox) {
+
+    formBox.classList.remove(
+      "form-highlight"
+    );
+
+
+    void formBox.offsetWidth;
+
+
+    formBox.classList.add(
+      "form-highlight"
+    );
+
+  }
+
+
+  /* FOCUS NAME FIELD AFTER SCROLL */
+
+  setTimeout(
+    () => {
+
+      if (nameInput) {
+
+        try {
+
+          nameInput.focus({
+            preventScroll:true
+          });
+
+        } catch (error) {
+
+          nameInput.focus();
+
+        }
+
+      }
+
+    },
+    700
+  );
 
 }
 
 
-});
+
+/* =====================================================
+   KEYBOARD SUPPORT FOR SERVICE CARDS
+===================================================== */
+
+function handleServiceKey(
+  event,
+  service
+) {
+
+  if (
+    event.key === "Enter" ||
+    event.key === " "
+  ) {
+
+    event.preventDefault();
+
+    goToContact(
+      service
+    );
+
+  }
+
+}
 
 
 
-/* CLICK OUTSIDE TO CLOSE */
+/* =====================================================
+   CONTACT FORM SUBMISSION
+===================================================== */
+
+const projectForm =
+  document.getElementById(
+    "projectForm"
+  );
+
+
+const submitButton =
+  document.getElementById(
+    "submitButton"
+  );
+
+
+const successMessage =
+  document.getElementById(
+    "success"
+  );
+
+
+if (projectForm) {
+
+  projectForm.addEventListener(
+    "submit",
+    async function (event) {
+
+      event.preventDefault();
+
+
+      /* SHOW SENDING MESSAGE */
+
+      successMessage.textContent =
+        "Sending your inquiry...";
+
+
+      submitButton.disabled =
+        true;
+
+
+      submitButton.textContent =
+        "Sending...";
+
+
+      const formData =
+        new FormData(
+          projectForm
+        );
+
+
+      try {
+
+        const response =
+          await fetch(
+            projectForm.action,
+            {
+
+              method:
+                projectForm.method,
+
+              body:
+                formData,
+
+              headers: {
+                "Accept":
+                  "application/json"
+              }
+
+            }
+          );
+
+
+        if (response.ok) {
+
+
+          /* SUCCESS */
+
+          successMessage.textContent =
+            "Thank you! Your inquiry has been sent successfully. I’ll get back to you soon.";
+
+
+          projectForm.reset();
+
+
+        } else {
+
+
+          /* FORMSPREE RETURNED ERROR */
+
+          let errorMessage =
+            "Something went wrong. Please try again or email me directly.";
+
+
+          try {
+
+            const data =
+              await response.json();
+
+
+            if (
+              data &&
+              data.errors &&
+              data.errors.length
+            ) {
+
+              errorMessage =
+                data.errors
+                  .map(
+                    (error) =>
+                      error.message
+                  )
+                  .join(", ");
+
+            }
+
+          } catch (error) {
+
+            /* Keep default message */
+
+          }
+
+
+          successMessage.textContent =
+            errorMessage;
+
+        }
+
+
+      } catch (error) {
+
+
+        /* NETWORK ERROR */
+
+        successMessage.textContent =
+          "Unable to send right now. Please check your internet connection or email me directly at rajsinghrajawat154@gmail.com.";
+
+
+      } finally {
+
+
+        /* ENABLE BUTTON AGAIN */
+
+        submitButton.disabled =
+          false;
+
+
+        submitButton.textContent =
+          "Send Project Inquiry →";
+
+      }
+
+    }
+  );
+
+}
+
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuButton =
+  document.querySelector(
+    ".menu"
+  );
+
+
+const navLinks =
+  document.querySelector(
+    ".navlinks"
+  );
+
+
+if (
+  menuButton &&
+  navLinks
+) {
+
+  menuButton.addEventListener(
+    "click",
+    () => {
+
+
+      const isOpen =
+        navLinks.style.display ===
+        "flex";
+
+
+      if (isOpen) {
+
+        navLinks.style.display =
+          "";
+
+      } else {
+
+        navLinks.style.display =
+          "flex";
+
+
+        navLinks.style.position =
+          "absolute";
+
+
+        navLinks.style.top =
+          "70px";
+
+
+        navLinks.style.left =
+          "0";
+
+
+        navLinks.style.right =
+          "0";
+
+
+        navLinks.style.flexDirection =
+          "column";
+
+
+        navLinks.style.alignItems =
+          "stretch";
+
+
+        navLinks.style.gap =
+          "8px";
+
+
+        navLinks.style.padding =
+          "16px";
+
+
+        navLinks.style.background =
+          "rgba(16,17,25,.97)";
+
+
+        navLinks.style.border =
+          "1px solid rgba(255,255,255,.08)";
+
+
+        navLinks.style.borderRadius =
+          "18px";
+
+
+        navLinks.style.backdropFilter =
+          "blur(20px)";
+
+      }
+
+    }
+  );
+
+
+
+  /* CLOSE MOBILE MENU AFTER LINK CLICK */
+
+  navLinks
+    .querySelectorAll("a")
+    .forEach(
+      (link) => {
+
+        link.addEventListener(
+          "click",
+          () => {
+
+            if (
+              window.innerWidth <= 900
+            ) {
+
+              navLinks.style.display =
+                "";
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+}
+
+
+
+/* =====================================================
+   RESET MOBILE MENU WHEN WINDOW GETS BIGGER
+===================================================== */
+
+window.addEventListener(
+  "resize",
+  () => {
+
+    if (
+      window.innerWidth > 900 &&
+      navLinks
+    ) {
+
+      navLinks.removeAttribute(
+        "style"
+      );
+
+    }
+
+  }
+);
+
+
+
+/* =====================================================
+   SMOOTH SCROLL FOR INTERNAL LINKS
+===================================================== */
 
 document
-.getElementById("portfolioModal")
-.addEventListener(
-"click",
-function(event) {
+  .querySelectorAll(
+    'a[href^="#"]'
+  )
+  .forEach(
+    (anchor) => {
+
+      anchor.addEventListener(
+        "click",
+        function (event) {
+
+          const targetId =
+            this.getAttribute(
+              "href"
+            );
 
 
-if(event.target === this) {
+          if (
+            !targetId ||
+            targetId === "#"
+          ) {
 
-closeGallery();
+            return;
 
-}
+          }
 
 
-});
+          const target =
+            document.querySelector(
+              targetId
+            );
 
+
+          if (target) {
+
+            event.preventDefault();
+
+
+            target.scrollIntoView({
+              behavior:"smooth",
+              block:"start"
+            });
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+
+/* =====================================================
+   CONSOLE MESSAGE
+===================================================== */
+
+console.log(
+  "Canvadesigner portfolio loaded successfully ✦"
+);
 
 </script>
 
